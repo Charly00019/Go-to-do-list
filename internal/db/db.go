@@ -6,7 +6,7 @@ import (
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 
-	"github.com/Charly00019/Go-to-do-list/internal/models" // Import models package
+	"github.com/Charly00019/Go-to-do-list/internal/models"
 )
 
 var Database *gorm.DB
@@ -18,6 +18,6 @@ func InitDB() {
 		log.Fatal("Failed to connect to database:", err)
 	}
 
-	// Auto-migrate tables
-	Database.AutoMigrate(&models.Todo{}) // Use models.Todo
+	// Ensure the Todo table exists
+	Database.AutoMigrate(&models.Todo{})
 }

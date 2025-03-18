@@ -4,28 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
+    
+    <!-- Corrected CSS Path -->
+    <link rel="stylesheet" href="/static/js/style.css">
 </head>
 <body>
     <h1>My To-Do List</h1>
-    <ul id="todo-list"></ul>
 
     <form id="todo-form">
         <input type="text" id="todo-input" placeholder="New task" required>
         <button type="submit">Add</button>
     </form>
 
-    <script>
-        document.getElementById("todo-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-            let input = document.getElementById("todo-input");
-            if (input.value.trim() !== "") {
-                let list = document.getElementById("todo-list");
-                let item = document.createElement("li");
-                item.textContent = input.value;
-                list.appendChild(item);
-                input.value = "";
-            }
-        });
-    </script>
+    <ul id="todo-list"></ul>
+
+    <!-- Load JavaScript at the end to prevent 'null' errors -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="/static/js/app.js"></script>
 </body>
 </html>
