@@ -17,6 +17,6 @@ func InitDB() {
 	}
 
 	// Auto-migrate tables
-	Todo := 0
+	var Todo int
 	Database.AutoMigrate(&Todo{})
 }
