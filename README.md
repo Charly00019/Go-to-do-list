@@ -1,25 +1,23 @@
-Below is the complete documentation in Markdown format. You can save this as `README.md` in your project root.
-
 ```markdown
 # Golang To-Do App Documentation
 
 ## Table of Contents
 
-1. [Overview](#overview)
-2. [Prerequisites](#prerequisites)
-3. [Project Setup and Folder Structure](#project-setup-and-folder-structure)
-4. [Backend (Golang) Code](#backend-golang-code)
-   - [Main Entry Point (`main.go`)](#main-entry-point-maingo)
-   - [Model Definition (`internal/models/todo.go`)](#model-definition-internalmodelstodo-go)
-   - [Database Initialization (`internal/db/db.go`)](#database-initialization-internaldbdb-go)
-   - [Router and API Handlers (`internal/router/router.go`)](#router-and-api-handlers-internalrouterrouter-go)
-5. [Frontend Code](#frontend-code)
-   - [HTML Template (`templates/index.html`)](#html-template-templatestindexhtml)
-   - [CSS Styling (`static/css/style.css`)](#css-styling-staticcssstylecss)
-   - [JavaScript Logic (`static/js/app.js`)](#javascript-logic-staticjsappjs)
-6. [Troubleshooting and Common Issues](#troubleshooting-and-common-issues)
-7. [Future Enhancements](#future-enhancements)
-8. [Conclusion](#conclusion)
+1. [Overview]
+2. [Prerequisites]
+3. [Project Setup and Folder Structure]
+4. [Backend (Golang) Code]
+   - [Main Entry Point (`main.go`)]
+   - [Model Definition (`internal/models/todo.go`)]
+   - [Database Initialization (`internal/db/db.go`)]
+   - [Router and API Handlers (`internal/router/router.go`)]
+5. [Frontend Code]
+   - [HTML Template (`templates/index.html`)]
+   - [CSS Styling (`static/css/style.css`)]
+   - [JavaScript Logic (`static/js/app.js`)]
+6. [Troubleshooting and Common Issues]
+7. [Future Enhancements]
+8. [Conclusion]
 
 
 
@@ -94,8 +92,8 @@ package main
 import (
     "fmt"
 
-    "github.com/Charly00019/Go-to-do-list/internal/db"
-    "github.com/Charly00019/Go-to-do-list/internal/router"
+    "github.com/your-username/Go-tossssssdo-list/internal/db"
+    "github.com/your-username/Go-tossssssdo-list/internal/router"
     "github.com/gin-gonic/gin"
 )
 
@@ -143,7 +141,7 @@ import (
     "gorm.io/driver/sqlite"
     "gorm.io/gorm"
 
-    "github.com/Charly00019/Go-to-do-list/internal/models"
+    "github.com/your-username/Go-tossssssdo-list/internal/models"
 )
 
 var Database *gorm.DB
@@ -177,8 +175,8 @@ package router
 import (
     "net/http"
 
-    "github.com/Charly00019/Go-to-do-list/internal/db"
-    "github.com/Charly00019/Go-to-do-list/internal/models"
+    "github.com/your-username/Go-tossssssdo-list/internal/db"
+    "github.com/your-username/Go-tossssssdo-list/internal/models"
     "github.com/gin-gonic/gin"
 )
 
